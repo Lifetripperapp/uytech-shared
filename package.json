@@ -1,7 +1,7 @@
 {
-  "name": "uytech-shared",
+  "name": "sales-dashboard-shared",
   "version": "1.0.0",
-  "description": "Shared components, utilities and styles for UYTECH projects",
+  "description": "Shared components, utilities and styles for Sales Dashboard projects",
   "main": "index.js",
   "scripts": {
     "build": "echo 'No build step required for shared components'",
@@ -39,9 +39,9 @@
     "components",
     "utilities",
     "shared",
-    "uytech"
+    "sales-dashboard"
   ],
-  "author": "UYTECH Team",
+  "author": "Sales Dashboard Team",
   "license": "MIT",
   "files": [
     "components/",

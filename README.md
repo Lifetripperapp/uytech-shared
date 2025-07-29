@@ -1,53 +1,73 @@
-# UYTECH Shared - Componentes Compartidos
+# Sales Dashboard Shared - Shared Components
 
-## Descripción
+Shared components, utilities and styles for Sales Dashboard projects.
 
-Componentes, utilidades y estilos compartidos entre UYTECH Current y UYTECH SaaS.
+## Structure
 
-## Estructura
-
-- `components/`: Componentes React reutilizables
-- `utils/`: Funciones utilitarias
-- `styles/`: Estilos CSS/Tailwind compartidos
+- `components/`: Reusable React components
+- `utils/`: Utility functions
+- `styles/`: Shared CSS/Tailwind styles
 - `hooks/`: Custom React hooks
-- `constants/`: Constantes compartidas
+- `constants/`: Shared constants
 
-## Uso
+## Usage
 
 ```javascript
-// En uytech-current o uytech-saas
+// In sales-dashboard-current or sales-dashboard-saas
 import { Button } from '../shared/components/Button';
 import { formatCurrency } from '../shared/utils/formatters';
 import { useLocalStorage } from '../shared/hooks/useLocalStorage';
 ```
 
-## Instalación
+## Installation
 
 ```bash
-# Como dependencia local
-npm install ../uytech-shared
+# As local dependency
+npm install ../sales-dashboard-shared
 
-# O como submodule de Git
-git submodule add https://github.com/uytech/uytech-shared
+# Or as Git submodule
+git submodule add https://github.com/lifetripperapp/sales-dashboard-shared
 ```
 
-## Componentes Disponibles
+## Available Components
 
-- `Button`: Botón reutilizable
-- `Modal`: Modal genérico
-- `Table`: Tabla con paginación
-- `Loading`: Componente de carga
-- `ErrorBoundary`: Manejo de errores
+- `Button`: Reusable button component
+- `Modal`: Generic modal component
+- `Table`: Table with pagination
+- `Loading`: Loading component
+- `ErrorBoundary`: Error handling
 
-## Utilidades
+## Utilities
 
-- `formatters`: Formateo de datos
-- `validators`: Validación de formularios
-- `helpers`: Funciones auxiliares
-- `api`: Cliente API común
+- `formatters`: Data formatting functions
+- `validators`: Form validation functions
+- `helpers`: Helper functions
+- `api`: Common API client
 
-## Estilos
+## Styles
 
-- `tailwind.css`: Configuración de Tailwind
-- `components.css`: Estilos de componentes
-- `variables.css`: Variables CSS
+- `tailwind.css`: Tailwind configuration
+- `components.css`: Component styles
+- `variables.css`: CSS variables
+
+## Development
+
+```bash
+# Run tests
+npm test
+
+# Lint code
+npm run lint
+
+# Format code
+npm run format
+```
+
+## Version Management
+
+This package uses semantic versioning. When making changes:
+
+1. Update version in `package.json`
+2. Create git tag: `git tag v1.0.0`
+3. Push tag: `git push origin v1.0.0`
+4. Update dependencies in consuming projects
